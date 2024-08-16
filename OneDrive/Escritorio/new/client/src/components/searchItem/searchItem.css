@@ -1,0 +1,133 @@
+.searchItem {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.searchItem:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.siImgContainer {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.siImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.siNoImage {
+  font-size: 4rem;
+  color: #cccccc;
+}
+
+.siContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.siHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siTitle {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.siRating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.siRating > button {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.siDetails {
+  margin: 15px 0;
+}
+
+.siDistance,
+.siTaxiOp,
+.siSubtitle,
+.siFeatures,
+.siPrice,
+.siTaxOp {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.siPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siPrice {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.siCheckButton {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.siCheckButton:hover {
+  background-color: #0056b3;
+}
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #218838;
+}

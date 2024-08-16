@@ -1,0 +1,50 @@
+.navbar {
+  height: 50px;
+  background-color: #009688; /* Verde */
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.logoHighlight {
+  color: #ff5722; /* Naranja */
+  font-weight: 700;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #009688; /* Verde */
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navIcon {
+  margin-right: 10px;
+}
+
+.navUsername {
+  margin-left: 10px;
+  font-weight: bold;
+}
