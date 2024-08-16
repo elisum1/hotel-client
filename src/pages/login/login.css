@@ -1,0 +1,102 @@
+@keyframes airplaneEntrance {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes subtleMovement {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #009688; /* Verde */
+}
+
+.titleContainer {
+  position: relative;
+  animation: airplaneEntrance 2s ease-out;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 36px;
+  animation: subtleMovement 3s infinite;
+}
+
+.logoHighlight {
+  color: #ff5722; /* Naranja */
+  font-weight: 700;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px; /* Tamaño aumentado */
+  background: white;
+  border-radius: 10px;
+  padding: 30px; /* Tamaño aumentado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lInput {
+  height: 45px; /* Tamaño aumentado */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.lButton,
+.lGuestButton,
+.lRegisterButton {
+  border: none;
+  padding: 12px; /* Tamaño aumentado */
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.lButton:disabled {
+  background-color: #007bffb3;
+  cursor: not-allowed;
+}
+
+.lButton:hover:not(:disabled),
+.lGuestButton:hover,
+.lRegisterButton:hover {
+  background-color: #0056b3;
+}
+
+.lGuestButton {
+  background-color: #6c757d;
+  margin-top: 10px;
+}
+
+.lRegisterButton {
+  background-color: #28a745; /* Verde para el botón de registro */
+  margin-top: 10px;
+}
+
+.lError {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
