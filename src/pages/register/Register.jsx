@@ -27,7 +27,7 @@ const Register = () => {
     setError("");
 
     try {
-      const res = await axios.post("/auth/register", info);
+      const res = await axios.post("https://api-xm8x.onrender.com/api/auth/register", info);
       alert("User registered successfully");
       console.log("User registered:", res.data);
       // Mostrar animación de registro exitoso
