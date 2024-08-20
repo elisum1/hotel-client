@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
-  const { data, loading, error } = useFetch("https://api-xm8x.onrender.com/hotels?featured=true&limit=4");
+  const { data, loading, error } = useFetch("https://api-xm8x.onrender.com/api/hotels?featured=true&limit=4");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {

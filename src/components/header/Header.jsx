@@ -55,7 +55,7 @@ const Header = ({ type }) => {
       type: "NEW_SEARCH", 
       payload: { destination, dates, options, min, max } 
     });
-    navigate("/api/hotels", { 
+    navigate("/hotels", { 
       state: { destination, dates, options, min, max } 
     });
   };
