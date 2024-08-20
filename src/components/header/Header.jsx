@@ -55,7 +55,7 @@ const Header = ({ type }) => {
       type: "NEW_SEARCH", 
       payload: { destination, dates, options, min, max } 
     });
-    navigate("https://api-xm8x.onrender.com/api/hotels", { 
+    navigate("/api/hotels", { 
       state: { destination, dates, options, min, max } 
     });
   };
